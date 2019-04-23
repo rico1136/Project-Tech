@@ -1,10 +1,9 @@
-let arrays = [[1, 2, 3,4,5,6,7,8,9], [4, 5], [6,7,8,9,10,11]];
+let arrays = [[1, 2, 3], [4, 5], [6]];
 // → [1, 2, 3, 4, 5, 6]
 
+// First try
 let spot = 0;
 let masterArray = [];
-
-console.log(arrays[0]);
 
 for (let i = 0; i<arrays.length; i++){
     arrayFiller(arrays[i]);
@@ -16,6 +15,10 @@ function arrayFiller(array){
         spot++;
     }
 }
-
 masterArray.sort((a, b) => {return a-b});
 console.log(masterArray);
+
+
+// New and improved.
+const beastArray = arrays.reduce((accumulator, currentValue) => accumulator.concat(currentValue) , [])
+console.log(beastArray);

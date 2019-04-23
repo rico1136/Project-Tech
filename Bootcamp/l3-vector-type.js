@@ -3,7 +3,6 @@ class Vec{
     constructor(x,y){
         this.x = x;
         this.y = y;
-        this.length = this.pythagoras();
     }
     plus(object){
         let plus = new Vec((this.x + object.x),(this.y + object.y));
@@ -13,7 +12,7 @@ class Vec{
         let minus = new Vec((this.x - object.x),(this.y - object.y));
         return minus;
     }
-    pythagoras(){
+    get length(){
         let square = (this.x*this.x) + (this.y*this.y);
         let pythagoras = Math.sqrt(square);
         return pythagoras;
