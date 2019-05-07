@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Bootcamp.iml" filepath="$PROJECT_DIR$/.idea/Bootcamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DatingApp/.idea/DatingApp.iml" filepath="$PROJECT_DIR$/../DatingApp/.idea/DatingApp.iml" />
     </modules>
   </component>
 </project>
